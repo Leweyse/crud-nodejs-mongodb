@@ -1,0 +1,22 @@
+body {
+  background: #3f588a;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+#button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+#button:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

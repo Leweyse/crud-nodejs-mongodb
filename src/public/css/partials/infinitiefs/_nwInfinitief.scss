@@ -1,0 +1,35 @@
+.nieuw_werkwoord_body {
+  position: absolute;
+
+  #nieuw_werkwoord__bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    .nieuw_werkwoord__section {
+      position: relative;
+      margin-left: 18rem;
+      margin-top: 2rem;
+
+      .nieuw_werkwoord__form {
+        font-size: 1.5rem;
+
+        .nieuw_werkwoord__form--item {
+          margin: 1rem;
+        }
+
+        .nieuw_werkwoord__form--button {
+          width: 2rem;
+          height: auto;
+
+          .nieuw_werkwoord__button {
+            background-color: #1b1b1b;
+            color: $quinary-color;
+          }
+        }
+      }
+    }
+  }
+}

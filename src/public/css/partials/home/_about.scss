@@ -1,0 +1,124 @@
+.about_body {
+  position: absolute;
+
+  #about__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: $quinary-color;
+    filter: contrast(1);
+    z-index: -1111;
+    overflow: hidden;
+
+    .about__cover {
+      position: fixed;
+      display: inline-block;
+      background: $quinary-color;
+      mix-blend-mode: difference;
+      border-radius: 50%;
+      transition: 2s;
+      cursor: pointer;
+      width: 90px;
+      height: 90px;
+      border: none;
+      transform: translate(-50%, -50%);
+
+      .about__cover--arrow {
+        border-radius: 50%;
+        transition: 2s;
+        cursor: pointer;
+        width: 90px;
+        height: 90px;
+        border: none;
+
+        .about__cover--arrow-top,
+        .about__cover--arrow-bottom {
+          background-color: $contrast-color;
+          height: 4px;
+          margin-left: 25%;
+          position: absolute;
+          top: 50%;
+          width: 40%;
+          transition: 2s;
+        }
+
+        .about__cover--arrow-top:after,
+        .about__cover--arrow-bottom:after {
+          background-color: $tertiary-color;
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transition: all 0.05s;
+        }
+      }
+
+      .about__cover--arrow-top {
+      	transform: rotate(45deg);
+      	transform-origin: bottom right;
+      }
+
+      .about__cover--arrow-top:after {
+        left: 100%;
+        right: 0;
+        transition-delay: 0s;
+      }
+
+      .about__cover--arrow-bottom {
+      	transform: rotate(-45deg);
+      	transform-origin: top right;
+      }
+
+      .about__cover--arrow-bottom:after {
+        left: 0;
+        right: 100%;
+        transition-delay: 0.12s;
+      }
+
+      &:hover .about__cover--arrow-top:after {
+        left: 0;
+        transition-delay: 0.12s;
+      }
+
+      &:hover .about__cover--arrow-bottom:after {
+        right: 0;
+        transition-delay: 0s;
+      }
+    }
+
+    .about__section {
+      margin: 15rem;
+      position: relative;
+      width: 55rem;
+      color: $primary-color;
+
+      h2 {
+        float: right;
+        position: relative;
+        width: 100%;
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        position: relative;
+        width: 100%;
+        text-align: justify;
+        font-size: 1.2em;
+      }
+    }
+
+    .first_content {
+      display: block;
+    }
+
+    .second_content,
+    .third_content,
+    .fourth_content {
+      display: none;
+    }
+  }
+}

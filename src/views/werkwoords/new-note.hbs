@@ -1,0 +1,46 @@
+<section class="nieuw_werkwoord_body">
+    <div id='nieuw_werkwoord__bg'>
+        {{>navigation}}
+        <div class="nieuw_werkwoord__section">
+            <div class="card-header">
+                <h3>New Note</h3>
+            </div>
+            <div class="card-body">
+                <form action="/notes/nwInfinitief" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="title" class="form-control" placeholder="Werkwoord" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="description" class="form-control" placeholder="Verbo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="ik_ver" class="form-control" placeholder="Ik...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="jij_ver" class="form-control" placeholder="Jij...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="u_ver" class="form-control" placeholder="U...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="hij_zij_ze_ver" class="form-control" placeholder="Hij, Zij, Ze...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="wij_we_ver" class="form-control" placeholder="Wij, We...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="jullie_ver" class="form-control" placeholder="Jullie...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="zij_ze_ver" class="form-control" placeholder="Zij, Ze...">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

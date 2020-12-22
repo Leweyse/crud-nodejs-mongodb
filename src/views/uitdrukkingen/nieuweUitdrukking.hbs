@@ -1,0 +1,27 @@
+<section class="nieuw_uitdrukking_body">
+    <div id='nieuw_uitdrukking__bg'>
+        {{>navigation}}
+        <div class="nieuw_uitdrukking__section">
+            <div class="nieuw_uitdrukking__formHeader">
+                <h3>New Note</h3>
+            </div>
+            <div class="nieuw_uitdrukking__form">
+                <form action="/uitdrukkingen/nieuwe" method="POST">
+                    <div class="nieuw_uitdrukking__form--item">
+                        <input type="text" name="uVlaams" class="nieuw_uitdrukking__form--input" placeholder="Uitdrukking:" autofocus>
+                    </div>
+                    <div class="nieuw_uitdrukking__form--item">
+                        <input type="text" name="uSpaans" class="nieuw_uitdrukking__form--input" placeholder="Expresión:">
+                    </div>
+                    <div class="nieuw_uitdrukking__form--button">
+                        <button class="nieuw_uitdrukking__button">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <script src="/js/nwInfinitiefs_functions.js" charset="utf-8"></script> -->

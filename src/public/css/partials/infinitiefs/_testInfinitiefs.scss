@@ -1,0 +1,49 @@
+.testInfinitiefs_body {
+  position: absolute;
+
+  #testInfinitiefs__bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    .testInfinitiefs__form {
+      position: relative;
+      margin: 10rem;
+
+      .testInfinitiefs__form--group {
+        justify-content: center;
+
+        .testInfinitiefs__form--item {
+          background: transparent;
+          margin: 1rem;
+
+          .testInfinitiefs__form--control {
+            font-size: 5rem;
+            border: none;
+            -webkit-appearence: none;
+            outline: none;
+
+            &[readonly] {
+               cursor: default;
+            }
+          }
+        }
+        .testInfinitiefs__form--button {
+          visibility: hidden;
+        }
+
+        .testInfinitiefs__form--item_left {
+          position: relative;
+          float: left;
+        }
+
+        .testInfinitiefs__form--item_right {
+          position: relative;
+          float: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.notes_body {
+  position: absolute;
+  background-color: $bg-color;
+  color: $contrast-color;
+  padding: 1em;
+  margin: 0;
+  padding: 1em;
+  width: 105%;
+  min-height: 80vh;
+  cursor: default;
+
+  .notes__grid {
+    border: 1px solid gray;
+  }
+
+  .notes__row {
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .notes__row--element {
+    display: inline-block;
+    background: transparent;
+    width: 20%;
+    float: left;
+    border: none;
+    padding: 1em;
+
+    margin-right: 1.2rem;
+    flex: 1;
+    flex-grow: 1;
+
+    .notes__row--principalContent {
+      width: auto with 2rem margin-right and margin-left;
+      display: block;
+      position: absolute;
+
+      .notes--word {
+        display: block;
+        margin: 0;
+        width: ajustar al tamaño de la palabra;
+        color: $primary-color;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        transition: 0.4s;
+        filter: grayscale(1);
+        opacity: 1.3;
+
+        &:hover {
+          transition: 0.4s;
+          text-shadow: -1px 0 $quaternary-color, 0 1px $quaternary-color, 1px 0 $quaternary-color, 0 -1px $quaternary-color;
+          font-weight: 900;
+          color: $quinary-color;
+          text-align: center;
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    .notes__row--extraContent {
+      display: hidden;
+      transition: 0.4s;
+
+      .notes--tword,
+      .notes--icon_pencil,
+      .notes--button_delete {
+        border: none;
+      }
+
+      .notes--icon_pencil {
+        width: 20px;
+        height: 20px;
+      }
+
+      .notes--button_delete {
+        background-color: transparent;
+        color: #912929;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      &.active {
+        display: block;
+        position: absolute;
+        transition: 0.4s;
+      }
+    }
+  }
+}

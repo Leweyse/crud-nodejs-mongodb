@@ -1,0 +1,28 @@
+<section class="uitdrukkingen_body">
+    {{>navigation}}
+    <div class="uitdrukkingen__grid">
+
+            <div class="uitdrukkingen__row">
+                {{#each uitdrukkingen}}
+                    <div class="uitdrukkingen__row--element">
+                        <div class="uitdrukkingen__row--principalContent">
+                            <p class="uitdrukkingen--word">{{uVlaams}}</p>
+                        </div>
+                        <div class="uitdrukkingen__row--extraContent">
+                            <p class="uitdrukkingen--tword">{{uSpaans}}</p>
+                            <a href="/uitdrukkingen/bewerken/{{_id}}"><i class="fa fa-pencil uitdrukkingen--icon_pencil"></i></a>
+                            <form action="/uitdrukkingen/verwijderen/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="uitdrukkingen--button_delete">
+                                    X
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+
+    </div>
+</section>
+
+<!-- <script src="/js/uitdrukkingen_functions.js" charset="utf-8"></script> -->

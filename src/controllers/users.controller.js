@@ -33,18 +33,18 @@ usersCtrl.signup = async (req, res) => {
             newUser.password = await newUser.encryptPassword(password);
             await newUser.save();
             req.flash('success_msg', 'You are registered!');
-            res.redirect('/users/signin');
+            res.redirect('/werkwoords/infinitiefs');
         }
     }
 };
 
 usersCtrl.renderSignInForm = (req, res) => {
-    res.render('users/signin');
+    res.render('users/signin', { login_functions:'/js/login_functions.js' });
 };
 
 usersCtrl.signin = passport.authenticate('local', {
     failureRedirect: '/users/signin',
-    successRedirect: '/notes',
+    successRedirect: '/werkwoords/infinitiefs',
     failureFlash: true
 });
 

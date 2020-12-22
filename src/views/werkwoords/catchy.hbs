@@ -1,0 +1,28 @@
+<section class="catchy_body">
+    <div id="catchy__bg">
+        {{>navigation}}
+        <div class="catchy__form">
+            {{#each result}}
+            <form class="catchy__form--group" action="/notes/catchyNote" method="POST">
+                <div class="catchy__form--item catchy__form--item_left">
+                    <input type="text" class="catchy__form--control" id="catchy-t" name="title" value="{{title}}" readonly>
+                </div>
+                <div class="catchy__form--item catchy__form--item_right">
+                    <input type="text" class="catchy__form--control" id="catchy-ct" name="confirm_title" value="{{confirm_title}}" autocomplete="off">
+                </div>
+                <div class="catchy__form--item catchy__form--item_left">
+                    <input type="text" class="catchy__form--control" id="catchy-d" name="description" value="{{description}}" readonly>
+                </div>
+                <div class="catchy__form--item catchy__form--item_right">
+                    <input type="text" class="catchy__form--control" id="catchy-cd" name="confirm_description" value="{{confirm_description}}" autocomplete="off">
+                </div>
+                <button type="submit" class="catchy__form--button">
+                    Check Answers
+                </button>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<script src="/js/catchy_functions.js" charset="utf-8"></script>

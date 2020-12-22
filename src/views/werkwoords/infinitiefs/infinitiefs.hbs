@@ -1,0 +1,40 @@
+<section class="infinitiefs_body">
+    {{>navigation}}
+    <div class="infinitiefs__grid">
+
+            <div class="infinitiefs__row">
+                {{#each infinitiefs}}
+                    <div class="infinitiefs__row--element">
+                        <div class="infinitiefs__row--principalContent">
+                            <p class="infinitiefs--word">{{iVlaams}}</p>
+                        </div>
+                        <div class="infinitiefs__row--extraContent">
+                            <p class="infinitiefs--tword">{{iSpaans}}</p>
+                            <a href="/werkwoords/infinitiefs/edit/{{_id}}"><i class="fa fa-pencil infinitiefs--icon_pencil"></i></a>
+                            <form action="/werkwoords/infinitiefs/verwijderen/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="infinitiefs--button_delete">
+                                    X
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+
+    </div>
+</section>
+
+<script src="/js/infinitiefs_functions.js" charset="utf-8"></script>
+
+<!-- <script id="template" type="x-handlebars-template">
+    <div class="grid">
+        {{#each this}}
+        <div class="row">
+            {{#each this}}
+            <div class="cell">{{n}}</div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+</script> -->

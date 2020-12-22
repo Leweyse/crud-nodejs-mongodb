@@ -1,0 +1,28 @@
+<section class="testUitdrukkingen_body">
+    <div id="testUitdrukkingen__bg">
+        {{>navigation}}
+        <div class="testUitdrukkingen__form">
+            {{#each result}}
+            <form class="testUitdrukkingen__form--group" action="/uitdrukkingen/test" method="POST">
+                <div class="testUitdrukkingen__form--item testUitdrukkingen__form--item_left">
+                    <input type="text" class="testUitdrukkingen__form--control" id="testUitdrukkingen-t" name="uVlaams" value="{{uVlaams}}" readonly>
+                </div>
+                <div class="testUitdrukkingen__form--item testUitdrukkingen__form--item_right">
+                    <input type="text" class="testUitdrukkingen__form--control" id="testUitdrukkingen-ct" name="confirm_uVlaams" value="{{confirm_uVlaams}}" autocomplete="off">
+                </div>
+                <div class="testUitdrukkingen__form--item testUitdrukkingen__form--item_left">
+                    <input type="text" class="testUitdrukkingen__form--control" id="testUitdrukkingen-d" name="uSpaans" value="{{uSpaans}}" readonly>
+                </div>
+                <div class="testUitdrukkingen__form--item testUitdrukkingen__form--item_right">
+                    <input type="text" class="testUitdrukkingen__form--control" id="testUitdrukkingen-cd" name="confirm_uSpaans" value="{{confirm_uSpaans}}" autocomplete="off">
+                </div>
+                <button type="submit" class="testUitdrukkingen__form--button">
+                    Check Answers
+                </button>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<script src="/js/testUitdrukkingen_functions.js" charset="utf-8"></script>

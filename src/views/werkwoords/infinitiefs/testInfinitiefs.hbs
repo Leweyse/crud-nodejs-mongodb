@@ -1,0 +1,28 @@
+<section class="testInfinitiefs_body">
+    <div id="testInfinitiefs__bg">
+        {{>navigation}}
+        <div class="testInfinitiefs__form">
+            {{#each result}}
+            <form class="testInfinitiefs__form--group" action="/werkwoords/infinitiefs/testInfinitiefC" method="POST">
+                <div class="testInfinitiefs__form--item testInfinitiefs__form--item_left">
+                    <input type="text" class="testInfinitiefs__form--control" id="testInfinitiefs-t" name="wInfinitief" value="{{wInfinitief}}" readonly>
+                </div>
+                <div class="testInfinitiefs__form--item testInfinitiefs__form--item_right">
+                    <input type="text" class="testInfinitiefs__form--control" id="testInfinitiefs-ct" name="confirm_wInfinitief" value="{{confirm_wInfinitief}}" autocomplete="off">
+                </div>
+                <div class="testInfinitiefs__form--item testInfinitiefs__form--item_left">
+                    <input type="text" class="testInfinitiefs__form--control" id="testInfinitiefs-d" name="wSpaans" value="{{wSpaans}}" readonly>
+                </div>
+                <div class="testInfinitiefs__form--item testInfinitiefs__form--item_right">
+                    <input type="text" class="testInfinitiefs__form--control" id="testInfinitiefs-cd" name="confirm_wSpaans" value="{{confirm_wSpaans}}" autocomplete="off">
+                </div>
+                <button type="submit" class="testInfinitiefs__form--button">
+                    Check Answers
+                </button>
+            </form>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<script src="/js/testInfinitiefs_functions.js" charset="utf-8"></script>

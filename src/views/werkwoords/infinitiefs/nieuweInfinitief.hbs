@@ -1,0 +1,48 @@
+<section class="nieuw_werkwoord_body">
+    <div id='nieuw_werkwoord__bg'>
+        {{>navigation}}
+        <div class="nieuw_werkwoord__section">
+            <div class="nieuw_werkwoord__formHeader">
+                <h3>New Note</h3>
+            </div>
+            <div class="nieuw_werkwoord__form">
+                <form action="/werkwoords/infinitiefs/nieuwe" method="POST">
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="iVlaams" class="nieuw_werkwoord__form--input" placeholder="Werkwoord" autofocus>
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="iSpaans" class="nieuw_werkwoord__form--input" placeholder="Verbo">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="ik_ver" class="nieuw_werkwoord__form--input" placeholder="Ik...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="jij_ver" class="nieuw_werkwoord__form--input" placeholder="Jij...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="u_ver" class="nieuw_werkwoord__form--input" placeholder="U...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="hij_zij_ze_ver" class="nieuw_werkwoord__form--input" placeholder="Hij, Zij, Ze...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="wij_we_ver" class="nieuw_werkwoord__form--input" placeholder="Wij, We...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="jullie_ver" class="nieuw_werkwoord__form--input" placeholder="Jullie...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--item">
+                        <input type="text" name="zij_ze_ver" class="nieuw_werkwoord__form--input" placeholder="Zij, Ze...">
+                    </div>
+                    <div class="nieuw_werkwoord__form--button">
+                        <button class="nieuw_werkwoord__button">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/nwInfinitiefs_functions.js" charset="utf-8"></script>

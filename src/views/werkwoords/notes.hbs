@@ -1,0 +1,39 @@
+<section class="notes_body">
+    <div class="notes__grid">
+        {{#each this or row}}
+            <div class="notes__row">
+                {{#each notes}}
+                    <div class="notes__row--element">
+                        <div class="notes__row--principalContent">
+                            <p class="notes--word">{{title}}</p>
+                        </div>
+                        <div class="notes__row--extraContent">
+                            <p class="notes--tword">{{description}}</p>
+                            <a href="/notes/edit/{{_id}}"><i class="fa fa-pencil notes--icon_pencil"></i></a>
+                            <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="notes--button_delete">
+                                    X
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+    </div>
+</section>
+
+<script src="/js/notes_functions.js" charset="utf-8"></script>
+
+<!-- <script id="template" type="x-handlebars-template">
+    <div class="grid">
+        {{#each this}}
+        <div class="row">
+            {{#each this}}
+            <div class="cell">{{n}}</div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+</script> -->

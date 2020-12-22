@@ -1,0 +1,44 @@
+/* Nieuw Werkwoord = nw */
+@import 'partials/config';
+@import 'partials/home/index';
+@import 'partials/home/about';
+@import 'partials/fonts/font';
+@import 'partials/navBar/navBar';
+@import 'partials/signIn&Up/signIn';
+@import 'partials/infinitiefs/infinitiefs';
+@import 'partials/infinitiefs/nwInfinitief';
+@import 'partials/infinitiefs/testInfinitiefs';
+@import 'partials/uitdrukkingen/testUitdrukkingen';
+@import 'partials/notes';
+@import 'partials/catchy';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'geomanistregular', sans-serif;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+  color: $quinary-color;
+}
+
+section {
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+button:focus,
+#guide__cover:focus {
+  outline: none;
+}

@@ -46,11 +46,14 @@ app.use((req, res, next) => {
 
 // Routes
 app.use(require('./routes/index.routes'));
-app.use(require('./routes/notes.routes'));
+// app.use(require('./routes/notes.routes'));
 app.use(require('./routes/users.routes'));
-app.use(require('./routes/game.routes'));
+app.use(require('./routes/catchy.routes'));
+app.use(require('./routes/infinitiefs.routes'));
+app.use(require('./routes/uitdrukkingen.routes'));
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
 module.exports = app;

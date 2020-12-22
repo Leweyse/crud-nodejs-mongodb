@@ -1,0 +1,49 @@
+.testUitdrukkingen_body {
+  position: absolute;
+
+  #testUitdrukkingen__bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    .testUitdrukkingen__form {
+      position: relative;
+      margin: 10rem;
+
+      .testUitdrukkingen__form--group {
+        justify-content: center;
+
+        .testUitdrukkingen__form--item {
+          background: transparent;
+          margin: 1rem;
+
+          .testUitdrukkingen__form--control {
+            font-size: 5rem;
+            border: none;
+            -webkit-appearence: none;
+            outline: none;
+
+            &[readonly] {
+               cursor: default;
+            }
+          }
+        }
+        .testUitdrukkingen__form--button {
+          visibility: hidden;
+        }
+
+        .testUitdrukkingen__form--item_left {
+          position: relative;
+          float: left;
+        }
+
+        .testUitdrukkingen__form--item_right {
+          position: relative;
+          float: right;
+        }
+      }
+    }
+  }
+}

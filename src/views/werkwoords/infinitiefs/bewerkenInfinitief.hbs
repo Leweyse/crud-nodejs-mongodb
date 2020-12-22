@@ -1,0 +1,44 @@
+<section class="bewerken-infinitief_body col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Note</h3>
+        </div>
+        <div class="card-body">
+            <form action="/werkwoords/infinitiefs/bewerken/{{infinitief._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="iVlaams" value="{{infinitief.iVlaams}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="iSpaans" value="{{infinitief.iSpaans}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="ik_ver" value="{{infinitief.ik_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="jij_ver" value="{{infinitief.jij_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="u_ver" value="{{infinitief.u_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="hij_zij_ze_ver" value="{{infinitief.hij_zij_ze_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="wij_we_ver" value="{{infinitief.wij_we_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="jullie_ver" value="{{infinitief.jullie_ver}}">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="zij_ze_ver" value="{{infinitief.zij_ze_ver}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

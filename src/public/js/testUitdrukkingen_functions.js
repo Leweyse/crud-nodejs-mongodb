@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function randomInputGame() {
         input_answer[2].style.display = 'none';
         input_answer[3].style.display = 'block';
 
-        input_answer[0].innerHTML = "<input type='text' id='testUitdrukkingen-t' name='confirm_wInfinitief' value='{{uVlaams}} readonly>";
+        input_answer[0].innerHTML = "<input type='text' id='testUitdrukkingen-t' name='wInfinitief' value='{{uVlaams}} readonly>";
         input_answer[3].innerHTML = "<input type='text' id='testUitdrukkingen-cd' name='confirm_wInfinitief' placeholder='Confirme título' value='{{confirm_uVlaams}}' autocomplete='off' autofocus=" + af + ">";
         input_answer[3].focus();
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function randomInputGame() {
         input_answer[2].style.display = 'block';
         input_answer[3].style.display = 'none';
 
-        input_answer[2].innerHTML = "<input type='text' id='testUitdrukkingen-d' name='confirm_wSpaans' value='{{uSpaans}} readonly>";
+        input_answer[2].innerHTML = "<input type='text' id='testUitdrukkingen-d' name='wSpaans' value='{{uSpaans}} readonly>";
         input_answer[1].innerHTML = "<input type='text' id='testUitdrukkingen-ct' name='confirm_wSpaans' placeholder='Confirme título' value='{{confirm_uSpaans}}' autocomplete='off' autofocus=" + af + ">";
         input_answer[1].focus();
 
